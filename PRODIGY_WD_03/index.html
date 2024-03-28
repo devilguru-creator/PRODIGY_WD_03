@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Web Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div id="status" class="status">
+        Enter player's names and start the game!
+      </div>
+      <div id="players" class="players">
+        <input type="text" id="player1" placeholder=" Enter Name of Player 1 " />
+        <span id="player1-score">0</span>
+        <span>vs</span>
+        <input type="text" id="player2" placeholder=" Enter Name of Player 2 " />
+        <span id="player2-score">0</span>
+      </div>
+      <button id="start-btn" class="btn">Start Game</button>
+      <button id="restart-btn" class="btn" style="display: none">
+        Restart Game
+      </button>
+      <div id="board" class="board"></div>
+    </div>
+    <div id="popup" class="popup">
+      <div id="popup-content" class="popup-content">
+        <span id="popup-message"></span>
+        <button id="popup-close-btn" class="btn">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
